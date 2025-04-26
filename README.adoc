@@ -1,0 +1,8 @@
+[[codeprimate-kotlin-grpc-gradle-example]]
+= Example Kotlin-based gRPC Service Gradle Project
+
+This repository contains a simple example of a text messaging service with text message types defined in Protobuf files.
+
+The Gradle build uses a custom, binary Gradle Plugin to compile the `.proto` files into Kotlin and then compile the generated Kotlin source into class files packaged in a JAR file.
+
+The project is currently built with Kotlin `1.9.25` and Gradle `8.13`.
