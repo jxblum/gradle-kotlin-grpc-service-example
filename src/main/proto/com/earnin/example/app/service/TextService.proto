@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package com.earnin.example.app.service;
+
+import "com/earnin/example/app/model/TextMessage.proto";
+import "com/earnin/example/app/model/TextReply.proto";
+
+service TextService {
+    rpc send(com.earnin.example.app.model.TextMessage) returns (com.earnin.example.app.model.TextReply) { }
+}

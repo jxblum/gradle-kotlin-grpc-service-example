@@ -1,0 +1,20 @@
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "1.8.0" }
+protobuf = { id = "com.google.protobuf", version = "0.9.4" }
+
+[versions]
+grpc-version="1.72.0"
+kotlin-grpc-version="1.4.3"
+protobuf-version="4.30.2"
+
+[libraries]
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version = "1.8.1" }
+grpc-kotlin-stub = { group = "io.grpc", name = "grpc-kotlin-stub", version.ref = "kotlin-grpc-version" }
+grpc-protobuf = { group = "io.grpc", name = "grpc-protobuf", version.ref = "grpc-version" }
+grpc-stub = { group = "io.grpc", name = "grpc-stub", version = "grpc-version" }
+protobuf-java = { group = "com.google.protobuf", name = "protobuf-java", version.ref = "protobuf-version" }
+protobuf-java-util = { group = "com.google.protobuf", name = "protobuf-java-util", version.ref = "protobuf-version" }
+protobuf-kotlin = { group = "com.google.protobuf", name = "protobuf-kotlin", version.ref = "protobuf-version" }
+protoc = { group = "com.google.protobuf", name = "protoc", version.ref = "protobuf-version" }
+protoc-gen-grpc-java = { group = "io.grpc", name = "protoc-gen-grpc-java", version.ref = "grpc-version" }
+protoc-gen-grpc-kotlin = { group = "io.grpc", name = "protoc-gen-grpc-kotlin", version.ref = "kotlin-grpc-version" }

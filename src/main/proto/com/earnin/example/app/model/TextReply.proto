@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package com.earnin.example.app.model;
+
+message TextReply {
+  int32 code = 1;
+  string message = 2;
+}
